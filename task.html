@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Basic styles for the to-do app */
+      body {
+        font-family: Arial, sans-serif;
+        background: position 100px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url('https://www.skymetweather.com/content/wp-content/uploads/2021/07/write-an-outline-fb.jpg');
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        margin: 20px;
+      }
+      input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      img{
+        object-fit: contain;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        position: relative;
+      }
+      li.completed {
+        background-color: #f0f0f0;
+      }
+      li.completed span {
+        text-decoration: line-through;
+        color: #999;
+      }
+      .delete {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .completed {
+        position: absolute;
+        top: 10px;
+        right: 60px;
+        font-size: 14px;
+      }
+      /* Styles for the Pending Tasks and Completed Tasks lists */
+      .task-list {
+        margin: 20px;
+        background-color:rgb(192, 191, 191);
+        border: 1px solid #955757;
+        padding: 10px;
+      }
+      .task-list h2 {
+        margin: 0 0 10px;
+      }
+    </style>
+  </head>
+  <body >
+   
+    
+    <form id="todoForm">
+      <input type="text" id="todoInput" placeholder="Enter a task" />
+      <button type="submit">Add</button>
+    </form>
+    <div id="pendingTasks" class="task-list">
+        
+    <h1>To-Do App</h1>
+      <h2>Pending Tasks</h2>
+      <ul id="todoList"></ul>
+    </div>
+    
+    <script src="script1.js"></script>
+  </body>
+</html>
